@@ -23,16 +23,16 @@
         <!-- List of Services -->
         <div class="services">
             <h2>Available Services</h2>
-            <div class="services-grid">
+                <div class="services-grid">
 
-            @foreach ($services as $service)
-            <x-z_service_card
-                image="{{ $service->image }}"
-                title="{{ $service->name }}" 
-            />
+                        @foreach ($services as $service)
+                        <x-z_service_card
+                            image="{{ $service->image }}"
+                            title="{{ $service->name }}" 
+                        />
 
-                
-            @endforeach
+                            
+                        @endforeach
                 </div>
             </div>
 

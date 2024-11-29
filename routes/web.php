@@ -21,6 +21,19 @@ Route::get('/', function () {
     return view('welcome', ['users' => $users, 'services' => $services]);
 });
 
+Route::get('/service-page', function (Request $request) {
+
+    $service = $request->query('name'); // e.g., 'Electrician'
+
+    // Fetch all providers from the Users table
+    $users = User::where('provider', true)
+                 ->where('service', $service)
+                 ->get();
+
+    // Pass both users and services to the view
+    return view('service', ['users' => $users, 'service' => $service]);
+});
+
 Route::post('/book-service', function (Request $request) {
    
     // Validate input
