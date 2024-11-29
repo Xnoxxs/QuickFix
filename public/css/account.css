@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.back-button-container {
+    text-align: center; /* Center the button horizontally */
+    padding-bottom: 20px; /* Add padding at the bottom of the container */
+}
+
+.back-button {
+    background-color: green; /* Set the button background to green */
+    color: white; /* Make the text white */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 1em; /* Set a readable font size */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.back-button:hover {
+    background-color: darkgreen; /* Slightly darker green on hover */
+}
+
+
+/* Status Message Styles */
+.status-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.status {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745; /* Green for success */
+}
+.status strong {
+    color: #155724;
+}
+
+/* Bookings Section Styles */
+.bookings-container {
+    max-width: 800px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.bookings-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
